@@ -1,0 +1,1 @@
+This is the official website for the Kingswood Entrepreneurs' Club which is a club based in Kingswood College Kandy dedicated on educating students about Entrepreneurship.
