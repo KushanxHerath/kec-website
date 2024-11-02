@@ -10,6 +10,11 @@
   font-family: 'Work Sans' , 'Poppins';
 }
 
+h1{
+  font-size: 2.1rem;
+  /* line-height: 2.1rem; */
+}
+
 h2{
   font-weight: 600;
 }
@@ -34,13 +39,17 @@ nav .active{
 
 .websection{
   padding: 50px 10%;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
 }
 
 .red{
   color: red;
 }
 
+.sectiontitle{
+  font-size: 1.7rem;
+  margin-bottom: 50px;
+}
 
 
 

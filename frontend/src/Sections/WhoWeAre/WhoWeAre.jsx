@@ -1,10 +1,10 @@
 import React , {useState} from 'react'
 import './WhoWeAre.css'
-import { wwaData } from './wwaData'
+import { aboutUsData } from '../../Pages/AboutUs/aboutUsData' 
 import LogoFlip from '../../Animations/LogoFlip/LogoFlip'
 
 export default function WhoWeAre(){
-  const [wwaState, setWwaState] = useState(wwaData[0])
+  const [wwaState, setWwaState] = useState(aboutUsData[0])
 
   const getActiveClass = ( buttonState)=>{
     if(buttonState === wwaState.state){
@@ -15,9 +15,9 @@ export default function WhoWeAre(){
   }
 
   const changeWwaState = (e)=>{
-    e.target.id === 'bt-wwa-au' ? setWwaState(wwaData[0]) : ''
-    e.target.id === 'bt-wwa-ov' ? setWwaState(wwaData[1]) : ''
-    e.target.id === 'bt-wwa-om' ? setWwaState(wwaData[2]) : ''
+    e.target.id === 'bt-wwa-au' ? setWwaState(aboutUsData[0]) : ''
+    e.target.id === 'bt-wwa-ov' ? setWwaState(aboutUsData[1]) : ''
+    e.target.id === 'bt-wwa-om' ? setWwaState(aboutUsData[2]) : ''
   }
   return (
     <section className='websection'>

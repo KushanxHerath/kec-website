@@ -56,10 +56,6 @@
     grid-template-rows: fit-content fit-content ;
   }
 
-  .div-wwa-content, .div-anim{
-    margin-top: 30px;
-  }
-
   .bt-wwa{
     font-size: 0.9rem;
   }
@@ -88,6 +84,8 @@
     grid-row: 2/3;
 
     justify-self: center;
+
+    margin-bottom: 50px;
   }
 
   .div-wwa-content{
@@ -108,6 +106,12 @@
 
 }
 
+@media(max-width:425px){
+  .div-description p{
+    min-height: 217px;
+  }
+}
+
 @media(max-width:375px){
   .div-buttonlist button{
     font-size: 0.75rem;
@@ -118,7 +122,4 @@
     height: fit-content;
   }
 
-  .div-description p{
-    min-height: 217px;
-  }
 }

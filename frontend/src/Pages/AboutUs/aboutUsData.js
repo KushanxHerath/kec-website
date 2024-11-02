@@ -1,4 +1,4 @@
-export const wwaData = [
+export const aboutUsData = [
   {
     state: 'wwa-au',
     description: `The Kingswood Entrepreneurs' Club is a vibrant club at Kingswood College Kandy, dedicated to fostering entrepreneurial skills and mindsets among students. We provide valuable knowledge in areas like finance, marketing, project management, and innovation, preparing future leaders to excel in the world of business. Through workshops, competitions, and hands-on experiences, we create a platform for students to develop their ideas and showcase their entrepreneurial potential.`

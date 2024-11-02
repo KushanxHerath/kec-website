@@ -1,0 +1,27 @@
+.title-oa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-moreac{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 2rem;
+
+  flex-wrap: wrap;
+
+  margin-top: 50px;
+}
+
+
+
+@media (max-width : 425px) {
+  .container-moreac {
+    width: 100%;
+    /* background-color: lightskyblue; */
+    display: flex;
+    flex-direction: column;
+  }
+}
