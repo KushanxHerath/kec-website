@@ -17,6 +17,7 @@ export default function AchievementCard1({achievement}) {
           <div className="div-acdescription">
             {achievement.description}
           </div>
+          <button className='bt-viewmore'><p>View More</p></button>
         </div>
       </div>
   )

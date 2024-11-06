@@ -30,20 +30,33 @@
   height: 100%;
 }
 
+
+
+/*     CONTENT BOX OF THE ACHIEVEMENT      */
 .div-content{
-  /* background-color: lightslategrey; */
-  /* border: solid 4px red ; */
+  /* background-color: lightslategrey;
+  border: solid 2px red ; */
 
   grid-column: 2/3;
   grid-row: 1/-1;
 
   margin-left: 25px;
 
-  overflow-y: hidden;
   max-height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-acdate{
+  margin-top: 5px;
+  margin-bottom: 1rem;
 }
 
 .h2-actitle {
+  /* border: solid 1px blue ;   */
+
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -53,24 +66,36 @@
   max-height: 2.4em; /* 2 lines * line-height */
 }
 
-.p-acdate{
-  /* border: solid darkblue 2px; */
-}
-
 .div-acdescription{
   /* border: solid 2px lightblue; */
   padding-right: 10%;
 
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.3rem;
 }
 
 
+.bt-viewmore{
+  margin-top: 0.5rem;
+  background-color: red;
+  border: none;
+  padding: 5px 0;
+  margin-right: 25px;
+
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.bt-viewmore:hover{
+  transform: scaleY(1.1);
+  box-shadow: 0px 0px 30px #e100008a;
+}
 
 
 @media(max-width:1024px){
   .h2-actitle{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .div-acdescription{
@@ -82,6 +107,10 @@
 
 @media(max-width:768px){
 
+  .container-accard1{
+    box-shadow: 0px 0px 15px #1414149c;
+  }
+
   .div-acimg{
     width:180px;
     height:min-content;
@@ -91,17 +120,27 @@
     width: 100%
   }
 
-  .div-content{
-    max-height:250px;
 
-    margin-left: 0.5rem
+
+
+  /*######## CONTENT ABOUT THE ACHIEVEMENT #####*/
+  .div-content{
+    margin-left: 0.5rem;
+    max-height: 187px;
+  }
+
+  .h2-actitle{
+    font-size:1.14rem;
+    flex-shrink: 0;
   }
 
   .p-acdate{
-    font-size:0.7rem
+    font-size:0.7rem;
+    margin-bottom: 0.5rem;
   }
 
   .div-acdescription{
+
 
     font-size:0.7rem;
     line-height:0.9rem;
@@ -110,8 +149,10 @@
     overflow:hidden;
     text-overflow:ellipsis;
   }
-
   
+  .bt-viewmore{
+    display: none;
+  }
 }
 
 
