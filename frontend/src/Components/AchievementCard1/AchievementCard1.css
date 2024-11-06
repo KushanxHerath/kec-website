@@ -113,7 +113,7 @@
 
   .div-acimg{
     width:180px;
-    height:min-content;
+    height:180px;
   }
 
   .img-acthumbnail{
@@ -126,7 +126,7 @@
   /*######## CONTENT ABOUT THE ACHIEVEMENT #####*/
   .div-content{
     margin-left: 0.5rem;
-    max-height: 187px;
+    max-height: 180px;
   }
 
   .h2-actitle{
@@ -176,6 +176,8 @@
     grid-row: 1/2;
     width: 100%;
     height: fit-content;
+
+    margin-bottom: 0.7rem;
   }
 
   .img-acthumbnail{
