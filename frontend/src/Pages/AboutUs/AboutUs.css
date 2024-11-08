@@ -1,0 +1,67 @@
+.section-ov,
+.section-om,
+.section-au{
+  align-items: center;
+  text-align: center;
+
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.div-au-logos{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+.div-au-logos .img-au-kck-crest{
+  height: 100%;
+}
+.div-au-logos .img-au-kec-logo{
+  height: 87%;
+}
+
+
+@media(max-width : 768px){
+  .sectiontitle-au-ov,
+  .sectiontitle-au-om{
+    margin-bottom: 30px;
+  }
+
+  .section-au,
+  .section-ov{
+    padding-bottom: 0px;
+  }
+}
+
+@media(max-width : 425px){
+  .sectiontitle-au-ov,
+  .sectiontitle-au-om{
+    margin-bottom: 20px;
+  }
+
+  .sectiontitle-au-au{
+    margin-bottom: 30px;
+  }
+
+  .div-au-logos{
+    height: 130px;
+    margin-bottom: 25px;
+  }
+
+  .section-ov,
+  .section-om,
+  .section-au{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media(max-width: 375px){
+  .div-au-logos{
+    height: 100px;
+    margin-bottom: 25px;
+  }
+}

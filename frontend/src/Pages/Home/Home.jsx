@@ -12,7 +12,6 @@ export default function Home() {
       <WhoWeAre/>
       <OurSponsors/>
       <OurAchievements/>
-      <Footer/>
     </>
   )
 }

@@ -11,6 +11,7 @@ import Committee from './Pages/Committee/Committee';
 import Achievements from './Pages/Achievements/Achievements';
 import Tester from './Pages/Tester/Tester';
 import Events from './Pages/Events/Events';
+import Footer from './Components/Footer/Footer';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
 
           <Route path="*" element={<Page404 />} />
         </Routes>
+      <Footer/>
     </div>
   )
 }
