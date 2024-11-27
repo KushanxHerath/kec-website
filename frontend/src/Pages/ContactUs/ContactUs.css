@@ -1,0 +1,204 @@
+.grid-flex-cucards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: fit-content;
+  column-gap: 1.2rem;
+
+  margin-bottom: 2rem;
+}
+
+.container-cucard{
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 1;
+
+  padding:0.5rem 1rem;
+
+  box-shadow: 0px 0px 7px #1414149c;
+  transition: 400ms;
+}
+
+.container-cucard:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px #ff00005d;
+  z-index: 5;
+}
+
+.container-cucard p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Ensures the email address wraps if needed */
+}
+
+.cucard-email p{
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+
+.icon-cu{
+  height: 50px;
+  margin-right: 0.7rem;
+}
+
+.flex-container-map{
+  background-color: black;
+  /* border: 1px red solid ; */
+
+  display: flex;
+}
+
+.div-container-mapiframe{
+  height: 500px;
+  flex-grow: 1;
+}
+
+.div-container-mapiframe iframe{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-bottom: -0.07rem;
+}
+
+.div-flex-schooldetails *{
+  text-align: center;
+}
+.div-flex-schooldetails{
+  /* background-color: lightcoral; */
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-mapsec-kck-crest{
+  height: 130px;
+}
+
+.div-cu-kck{
+  justify-items: center;
+  padding-top: 1rem;
+}
+.div-cu-kck p{
+  color: rgba(192, 179, 179, 0.884);;
+}
+
+
+
+
+@media(max-width:1440px){
+  .container-cucard p{
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+
+@media(max-width:1024px){
+  .div-container-mapiframe{
+    flex-grow: 1;
+  }
+  .div-flex-schooldetails{
+    flex-grow: 1;
+  }
+  .img-mapsec-kck-crest{
+    height: 90px;
+  }
+
+  .div-flex-schooldetails h2{
+    font-size: 1.2rem;
+  }
+
+  .div-cu-kck p {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+  .div-cu-kck{
+    padding-top: 1rem;
+  }
+
+}
+
+@media(max-width:768px){
+  .container-cucard{
+    height: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .container-cucard p{
+    text-align: center;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+  .icon-cu{
+    margin-left: 1rem;
+  }
+
+  .div-container-mapiframe{
+    flex-grow: 1;
+    height: 300px;
+  }
+  .div-flex-schooldetails{
+    flex-grow: 4;
+  }
+
+
+}
+
+
+@media (max-width:425px) {
+  .icon-cu{
+    width: 100%;
+    height: auto;
+  }
+  .container-cucard p{
+    font-size: 0.7rem;
+  }
+
+  .flex-container-map{
+    flex-direction: column;
+  }
+  .div-flex-schooldetails{
+    padding: 2rem 1rem;
+  }
+
+}
+
+@media (max-width:375px){
+
+  .section-cu-map{
+    padd: 0;
+  }
+
+  .container-cucard{
+    padding: 1rem 1rem;
+  }
+  .container-cucard p{
+    display: none;
+  }
+
+  .flex-container-map{
+    width: 100%;
+    flex-direction: column;
+  }
+  .div-container-mapiframe{
+    width: 100%;
+  }
+  .div-flex-schooldetails > h2:nth-child(2){
+    margin-top: 1rem;
+  }
+}

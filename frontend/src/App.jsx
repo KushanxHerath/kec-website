@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-import Header from './Components/Header/HEader'
+import Header from './Components/Header/Header'
 import Home from './Pages/Home/Home';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import Page404 from './Pages/Page404/Page404';

@@ -78,6 +78,10 @@ nav .a-nav:hover{
   font-size: 1.1rem;
 }
 
+.a-bt-nav-contactus:active{
+  color: white;
+}
+
 
 
 /*   BURGER MENU   */

@@ -40,7 +40,7 @@ export default function Footer() {
             <h3>KANDY</h3>
             <div className="div-ft-kck-iconset">
             <a href="https://www.facebook.com/kingswoodcollegelk?mibextid=LQQJ4d" target='_blank'>
-              <FaFacebookSquare className='sm-icon's />
+              <FaFacebookSquare className='sm-icon' />
             </a>
             <a href="https://www.instagram.com/kingswood.college" target='_blank' >
               <FaInstagramSquare className='sm-icon'  />

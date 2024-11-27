@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Header.module.css'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMenu } from "react-icons/io5";
 
@@ -25,7 +25,7 @@ export default function Header() {
         <NavLink className={styles['a-nav']} to='/committee'>Committee</NavLink>
         <NavLink className={styles['a-nav']} to='/about-us'>About Us</NavLink>
         <button className={styles['bt-nav-contactus']}>
-          <NavLink className={styles['a-bt-nav-contactus']} to='/contact-us'>Contact Us</NavLink>
+          <Link className={styles['a-bt-nav-contactus']} to='/contact-us'>Contact Us</Link>
         </button>
       </nav>
 
