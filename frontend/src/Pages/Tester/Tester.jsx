@@ -1,14 +1,16 @@
 import React from 'react'
 import './Tester.css'
-import LogoFlip from '../../Animations/LogoFlip/LogoFlip'
-import AchievementCard2 from '../../Components/AchievementCard2/AchievementCard2'
-import { achievementsData } from '../../Pages/Achievements/achievementsData'
-import AchievementCard1 from '../../Components/AchievementCard1/AchievementCard1'
+import CommitteeCard from '../../Components/CommitteeCard/CommitteeCard'
+import {committeeData} from '../Committee/committeeData.js'
 
 export default function Tester() {
   return (
     <section className='websection section-tester'>
-      <AchievementCard1 achievement={achievementsData[0]}/>
+      <h2 className='sectiontitle'>Committee 2024/25</h2>
+      <div className="grid-committeecards">
+        {committeeData.map(member => <CommitteeCard pic={member.pfp} designation={member.designation} name={member.name}/>)}
+      </div>
+
     </section>
   )
 }

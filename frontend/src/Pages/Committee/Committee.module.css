@@ -1,0 +1,35 @@
+.grid-committeecards{
+  /* background-color: lightpink; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(calc(170px + 5rem), 1fr));
+  grid-row-gap: 3rem ;
+  justify-items: center;
+  /* max-width: 1400px; */
+}
+
+
+
+@media(max-width:1024px){
+  .grid-committeecards{
+    grid-template-columns: repeat(auto-fit , minmax(calc(170px), 1fr));
+  }
+}
+
+
+@media(max-width:768px){
+  .grid-committeecards{
+    grid-template-columns: repeat(auto-fit , minmax(calc(130px + 2rem), 1fr));
+  }
+}
+
+@media(max-width:425px){
+  .grid-committeecards{
+    grid-template-columns: repeat(auto-fit , minmax(calc(150px), 1fr));
+  }
+}
+
+@media(max-width:375px){
+  .grid-committeecards{
+    grid-template-columns: repeat(auto-fit , minmax(calc(120px + 1rem), 1fr));
+  }
+}
