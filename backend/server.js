@@ -1,11 +1,11 @@
-const express =  require('express');
-const dotenv = require('dotenv');
+import express from 'express'
+import dotenv from 'dotenv'
 
 dotenv.config()
-
 const app = express()
+const PORT = process.env.BE_PORT || 5000
 
-const PORT = process.env.BE_PORT
+app.use(express.json());
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
