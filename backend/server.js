@@ -14,9 +14,8 @@ app.use(express.json())
 
 
 //Define Routes
-app.use('/api/achievements' , achievementsRouter)
-
-
+app.use('/api/achievements' , achievementsRouter);
+app.use('/api/committees', committeesRouter)
 
 
 
@@ -24,5 +23,4 @@ app.use('/api/achievements' , achievementsRouter)
 //Start the server
 app.listen(PORT , ()=>{
   console.log(`Server running on http://localhost:${PORT}`);
-  
 })
