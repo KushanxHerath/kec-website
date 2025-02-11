@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 export default function ({achievement, viewMore}) {
+  const imageURL = viewMore ? `achievements/${achievement.thumbnail}` : `http://localhost:5000/uploads/achievements/${achievement.thumbnail}`
 
   const getTitle = ()=>{
     if(!viewMore){
@@ -27,7 +28,7 @@ export default function ({achievement, viewMore}) {
     <Link to={'/achievements'}>
       <div className={styles['container-accard2']}>
         <div className={styles['div-acimg']}>
-          <img src={`/achievements/${achievement.thumbnail}`} alt="" className={styles["img-acimg"]} />
+          <img src={imageURL} alt="" className={styles["img-acimg"]} />
         </div>
         {getTitle()}
       </div>

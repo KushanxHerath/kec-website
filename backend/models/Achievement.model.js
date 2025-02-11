@@ -6,7 +6,7 @@ const achievementSchema = new mongoose.Schema({
   thumbnail: {type:String, required:true},
   short_description: {type:String, required:true},
   long_description: {type:String, required:true},
-  date:{type:String, required:true},
+  date:{type:Date, required:true},
   gallery:{type:[String], default:[]}
 })
 
