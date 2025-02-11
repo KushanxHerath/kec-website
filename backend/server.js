@@ -1,8 +1,8 @@
 const express = require('express');
-require('dotenv').config();
+const mongoose = require('mongoose')
 
-const achievementsRouter = require('./routes/achievements.router.js');
-const committeesRouter = require('./routes/committees.router.js');
+const achievementRoutes = require('./routes/achievement.router.js')
+require('dotenv').config();
 
 
 const app = express()
@@ -11,16 +11,18 @@ const PORT = process.env.BE_PORT || 5000;
 //Define Middlewares
 app.use(express.json())
 
-
-
-//Define Routes
-app.use('/api/achievements' , achievementsRouter);
-app.use('/api/committees', committeesRouter)
+app.use('/api/achievements/' , achievementRoutes)
 
 
 
+
+
+mongoose.connect(`mongodb+srv://kushanherathpersonal:${process.env.DB_PASSWORD}@kecwebsite.mgete.mongodb.net/test`)
+  .then(()=> console.log('Connected to the mongo db database successfully...'))
+  .catch(err => console.err("couldn't connect to the database"))
 
 //Start the server
 app.listen(PORT , ()=>{
   console.log(`Server running on http://localhost:${PORT}`);
 })
+
